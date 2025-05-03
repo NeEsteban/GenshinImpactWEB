@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Character Selector</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="CSS/CS_style.css">
 </head>
 <body>
     
@@ -12,46 +15,57 @@
         <!-- MENÚ PRINCIPAL -->
         <nav id="menu">
 
-            <div id="logo">
-                <a href="LandingPage.html"><img src="" alt=""></a>
-                
-             </div>
-            
-            <input type="checkbox" id="menuToggle">
-                    <label for="menuToggle" class="btnCloseMenu">
-                        <i class="fa-solid fa-bars"></i>
-                    </label>
-
-            <ul class="menu-flex">
-                <li><a href="">Hoyoverse</a></li>
-                <li><a href="">Juego</a></li>
-                <li><a href="">Personajes</a></li>
-            </ul>
+            <div id="menu-flex" class="row bg-success-subtle w-100 p-4">
+                <div id="logo" class="col-8">
+                    <a href="LandingPage.html"><img src="" alt=""></a>
+                </div>
+                <div class="row col-4">
+                    <button type="button" class="col"><a href="">Hoyoverse</a></button>
+                    <button type="button" class="col"><a href="">Juego</a></button>
+                    <button type="button" class="col"><a href="">Personajes</a></button>
+                </div>
         </nav>
 
     </header>
 
     <main>
-        <!-- Foto del personaje escogido -->
-        <section class="chr-img">
-            <img src="" alt="">
-            <a href="">Info</a>
-        </section>
-
-        <!-- Area de seleccion de personajes y naciones -->
-        <section class="selection">
+        <div id="chrSelectorCont" class="container-fluid row vw-100 py-4 m-0 g-0 text-center">
             <!-- divisor visual -->
-            <div class="divider-horizontal"></div>
-
-            <!-- area de seleccion de personajes -->
-            <div id="chr-selector" class="bg-primary-subtle p-4">
-
+            <div class="divider-vertical h-100 col">
+                <img src="MEDIA/IMG/divisor_vertical.png" class="h-100" alt="">
             </div>
 
-            <!-- divisor visual -->
-            <div class="divider-horizontal"></div>
+            <!-- Foto del personaje escogido -->
+            <section class="chr-img h-100 row col-5 align-items-center">
+                <img src="MEDIA/IMG/mainImg.png" class="img-fluid">
+                <div id="chr-btn" class="text-center container col p-4">
+                    <img src="MEDIA/IMG/button.png" class="text-center col-6" alt="...">
+                </div>
+            </section>
 
-            <!-- seleccion de naciones-->
+            <!-- divisor visual -->
+            <div class="divider-vertical h-100 col">
+                <img src="MEDIA/IMG/divisor_vertical.png" class="h-100" alt="">
+            </div> 
+
+            <!-- Area de seleccion de personajes y naciones -->
+            <section class="selection h-100 row col-5">
+                
+                <!-- area de seleccion de personajes -->
+                <div id="chr-selector" class="bg-primary-subtle h-100 p-4 col">
+
+                </div>
+
+            </section>
+
+            <!-- divisor visual -->
+            <div class="divider-vertical h-100 col">
+                <img src="MEDIA/IMG/divisor_vertical.png" class="h-100" alt="">
+            </div>
+
+        </div>
+        
+            <!-- seleccion de naciones
             <div class="nation-selector">
                 <div class="nation-img">
                     <img src="" alt="">
@@ -80,9 +94,9 @@
                 <div class="nation-img">
                     <img src="" alt="">
                 </div>
-            </div>
+            </div> -->
 
-        </section>
+        
 
     </main>
 

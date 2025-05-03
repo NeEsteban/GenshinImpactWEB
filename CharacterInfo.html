@@ -4,35 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Info</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="CSS/CI_style.css">
 </head>
 <body>
     <header>
           <!-- MENÚ PRINCIPAL -->
           <nav id="menu">
 
-            <div id="logo">
-                <a href="LandingPage.html"><img src="" alt=""></a>
-                
-             </div>
-            
-            <input type="checkbox" id="menuToggle">
-                    <label for="menuToggle" class="btnCloseMenu">
-                        <i class="fa-solid fa-bars"></i>
-                    </label>
-
-            <ul class="menu-flex">
-                <li><a href="">Hoyoverse</a></li>
-                <li><a href="">Juego</a></li>
-                <li><a href="">Personajes</a></li>
-            </ul>
+            <div id="menu-flex" class="row bg-success-subtle w-100 p-4">
+                <div id="logo" class="col-8">
+                    <a href="LandingPage.html"><img src="" alt=""></a>
+                </div>
+                <div class="row col-4">
+                    <button type="button" class="col"><a href="">Hoyoverse</a></button>
+                    <button type="button" class="col"><a href="">Juego</a></button>
+                    <button type="button" class="col"><a href="">Personajes</a></button>
+                </div>
         </nav>
 
     </header>
 
     <main>
 
-        <section id="chsn-chracter" class="container-fluid">
-            <div class="row pt-5">
+        <section id="chsn-chracter" class="container-fluid vw-100">
+            <div class="row pt-4">
 
                 <!-- Imagen personaje elegido -->
                 <div class="col row justify-content-center">
@@ -42,37 +38,31 @@
                 </div>
 
                 <!-- info del personaje -->
-                <div class="col row g-3 justify-content-center align-items-center">
-                    <div class="chr-namecard col-11 col-md-10 col-lg-10 bg-success-subtle p-3" >
-
+                <div class="col row justify-content-center align-items-center h-100">
+                    <div class="chr-namecard col-11 col-md-10 col-lg-10 bg-success p-3 h-100" >
                    </div>
 
-                   <!-- para saltar entre columnas -->
-                   <div class="w-100"></div>
 
-                   <div class=" main-info col-11 col-md-10 col-lg-10 bg-success-subtle p-3">
+                   <div class=" main-info col-11 col-md-10 col-lg-10 bg-success-subtle p-3 h-100">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, cupiditate. Dicta dolorum culpa quisquam voluptates, rem qui. Illo, numquam. Ut nesciunt tenetur atque. Recusandae nesciunt suscipit saepe, libero laboriosam repudiandae.</p>
 
                    </div >
 
-                   <!-- para saltar entre columnas -->
-                    <div class="w-100"></div>
-
-                   <div class="divider col-11 col-md-10 col-lg-10 bg-success-subtle p-3">
+                   <div class="divider col-11 p-3 h-100 w-80">
+                    <img src="MEDIA/IMG/divisor_1.png" class="h-100 w-100 text-center" alt="">
 
                    </div>
 
-                    <!-- para saltar entre columnas -->
-                   <div class="w-100"></div>
+                   <div class="build-container col-11 col-md-10  p-3 justify-content-space-around h-100">
+                        <div class="row justify-content-center align-items-center g3 h-100">
 
-                   <div class="build-container  col-11 col-md-10 col-lg-10 bg-success-subtle p-3 justify-content-space-around">
-                        <div class="row justify-content-center align-items-center g3">
-
-                            <div class="col-6 col-md-10 col-lg-10 bg-success">
-
-
+                            <div class="col-6 h-100">
+                                <img src="MEDIA/IMG/banner.png" class="h-100 w-100 text-center" alt="">
                             </div>
      
-                            <div class="col-6 col-md-10 col-lg-10 bg-success">
+                            <div class="col-6 h-100">
+                                <img src="MEDIA/IMG/banner.png" class="h-100 w-100 text-center" alt="">
+                            </div>
      
      
                             </div>
