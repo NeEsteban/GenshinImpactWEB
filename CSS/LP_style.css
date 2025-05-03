@@ -1,0 +1,90 @@
+*{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 10vh;
+}
+
+/* Fuentes */
+@font-face{
+    font-family: HYWenHei;
+    src: url(../MEDIA/FONTS/hywenhei.ttf); 
+}
+
+/* Menú */
+#logo{
+    height: 5vh;
+}
+
+#menu-flex{
+    height: 10vh;
+    position: fixed;
+    z-index: 100;
+}
+
+#menu-flex button{
+    background: none;
+    border: none;
+}
+
+#menu-flex button a{
+    font-family: HYWenHei;
+    text-decoration: none;
+}
+
+/* Textos */
+p{
+    font-family: HYWenHei;
+}
+
+
+
+h1{
+    font-family: HYWenHei;
+}
+
+/* ImagenPrincipal */
+#main-img{
+    height: 100vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+    width: 100vw;
+    scroll-snap-align: start;
+    
+}
+
+/* Slideshow */
+#slideshow{
+    scroll-snap-align: center;
+    height: 90vh;
+}
+
+#slideshowContainer{
+    height: 60vh;
+}
+
+.carousel .carousel-control-next-icon{
+    background-image: url("../MEDIA/IMG/next_icon.png"); 
+}
+
+.carousel .carousel-control-prev-icon{
+    background-image: url("../MEDIA/IMG/prev_icon.png"); 
+}
+
+
+/* Game Info */
+#game-info{
+    scroll-snap-align: center;
+}
+
+/* Showcase de Pesonajes */
+#chr-showcase{
+    scroll-snap-align: start;
+    height: 90vh;
+}
+
+#img-chr-showcase{
+    height: 90vh;
+}
+
+#btn-chr-showcase{
+    height: 10vh;
+}
+

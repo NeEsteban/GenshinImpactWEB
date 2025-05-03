@@ -25,13 +25,21 @@
                     </label> -->
 
                     <div id="menu-flex" class="row bg-success-subtle w-100 p-4">
-                        <div id="logo" class="col-8">
-                            <a href="LandingPage.html"><img src="" alt=""></a>
+                        <div id="logo" class="col-8 h-100">
+                            <a href="LandingPage.html" class="h-100"><img src="MEDIA/IMG/logo.png" class="h-100" alt=""></a>
                         </div>
-                        <div class="row col-4">
-                            <button type="button" class="col"><a href="">Hoyoverse</a></button>
-                            <button type="button" class="col"><a href="">Juego</a></button>
-                            <button type="button" class="col"><a href="">Personajes</a></button>
+                        <div class="row col-4 justify-content-space-around h-100">
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                            
+                            <button type="button" class="col-3 h-100"><a href="">Hoyoverse</a></button>
+
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+
+                            <button type="button" class="col-3 h-100"><a href="">Juego</a></button>
+
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+
+                            <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
                         </div>
                 
 
@@ -48,32 +56,39 @@
 
     <main>
 
-       <div id="main-img" class="container-fluid">
-            <img src="MEDIA/IMG/mainImg.png" class="img-fluid" alt="Protagonistas de GENSHIN IMPACT en un campo de flores blancas">
+       <div id="main-img" class="container-fluid text-center">
+            <img src="MEDIA/IMG/mainImg.png" class="img-fluid h-100 text-center" alt="Protagonistas de GENSHIN IMPACT en un campo de flores blancas">
        </div>
 
        <!-- SLIDESHOW -->
        <section id="slideshow" class="container py-4">
 
-        <h1 class="text-center">AAAAAAAAAAAAAAAAAA</h1>
+        <h1 class="text-center">Disfruta de la aventura</h1>
 
             <!-- Slideshow container -->
-            <div id="slideshowContainer" class="carousel slide" data-bs-ride="carousel">
+            <div id="slideshowContainer" class="carousel slide w-100" data-bs-ride="carousel">
+
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#slideshowContainer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#slideshowContainer" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#slideshowContainer" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#slideshowContainer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="starButton">
+                  </button>
+                  <button type="button" data-bs-target="#slideshowContainer" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="starButton">
+                  </button>
+                  <button type="button" data-bs-target="#slideshowContainer" data-bs-slide-to="2" aria-label="Slide 3">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="starButton">
+                  </button>
                 </div>
 
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="MEDIA/IMG/slideShow_img1.png" class="d-block w-100" alt="...">
+                <div class="carousel-inner h-100 justify-content-center">
+                  <div class="carousel-item active h-100 ">
+                    <img src="MEDIA/IMG/slideShow_img1.png" class="d-block w-100 " alt="...">
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item h-100 ">
                     <img src="MEDIA/IMG/slideShow_img2.png" class="d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item">
-                    <img src="MEDIA/IMG/slideShow_img3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-item h-100 ">
+                    <img src="MEDIA/IMG/slideShow_img3.png" class="d-block w-100 " alt="...">
                   </div>
                 </div>
 
@@ -89,7 +104,7 @@
               </div>
        </section>
 
-       <div class="divider container p-4">
+       <div class="divider container p-4 col-8">
         <img src="MEDIA/IMG/divisor_2.png" class="w-100" alt="Divisor">
        </div>
 
@@ -114,38 +129,37 @@
             
        </section>
 
-       <div class="divider container p-4">
+       <div class="divider container p-4 pb-5 col-8">
             <img src="MEDIA/IMG/divisor_1.png" class="w-100" alt="Divisor">
        </div>
 
-       <section id="chr-showcase" class="container">
-        <div class="row">
-            <div id="chr-select" class="row col-3 bg-success-subtle">
+
+       <section id="chr-showcase" class="container pt-5 pb-5 vw-80">
+        <div id ="img-chr-showcase"  class="row h-100">
+            <div id="chr-select" class="row col-3 bg-success-subtle h-100">
                 <div class="bg-secondary-subtle"></div>
                 <div class="bg-secondary"></div>
                 <div class="bg-secondary-subtle"></div>
                 <div class="bg-secondary"></div>
             </div>
-            <div id="show-chr" class="col-9 bg-primary-subtle">
-                <img src="MEDIA/IMG/mainImg.png" class="img-fluid" alt="...">
+            <div id="show-chr" class="col-9 bg-primary-subtle h-100">
+                <img src="MEDIA/IMG/mainImg.png" class="img-fluid h-100" alt="...">
             </div>
         </div>
-        <div class="row">
-            <div id="chr-btn" class="text-center container col p-4">
+        <div id ="btn-chr-showcase" class="row">
+            <div id="chr-btn" class="text-center container col p-4 h-100">
                 <img src="MEDIA/IMG/button.png" class="" alt="...">
             </div>
         </div>         
             
        </section>
 
-        <div class="divider container p-4">
-            <img src="MEDIA/IMG/divisor_1.png" class="w-100" alt="Divisor">
-        </div>
-
     </main>
 
-    <footer>
-        <div></div>
+    <footer class="bg-primary-subtle">
+        <div class="pt-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit nam ratione at delectus ut veritatis rerum dolores omnis! Incidunt tempore veritatis amet alias vel culpa animi veniam earum provident.</p>
+        </div>
         <div class="social-btns"></div>
 
     </footer>
