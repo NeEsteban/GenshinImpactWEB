@@ -24,13 +24,10 @@ $(document).ready(function() {
 
        for(let z=0; z< url.length; z++){
         fetchChrData(url[z]);
-        fetchChrImg(url[z]); 
+        fetchChrImg(url[z] , list[z]); 
 
-        //funciona a medias
-        renderIcon(chr_Icon[z]);
        }
 
- 
        console.log(url);
        console.log(list);
        console.log(chr_List);
@@ -52,14 +49,14 @@ $(document).ready(function() {
             return response.json();
         })
         .then(function (result) {
-            // console.log(pokemonDetails);
-            // Insertamos el primer pokemon (y sus datos) en el array sortedPokemon
+            
             chr_List.push(result);
+
             // chr_List.sort(function (a, b) {
             //     return a.id - b.id; // Ordenar por id en orden ascendente
             // });
 
-            // renderPokemonCard();
+            
         })
         .catch(function (err) {
             console.log(err);
@@ -67,8 +64,9 @@ $(document).ready(function() {
 
     }
 
-    function fetchChrImg(url){
+    function fetchChrImg(url , url_Data){
         let Img_url = url;
+        let chr_data = url_Data;
 
         fetch(Img_url + "/list")
         .then(function (response) {
@@ -80,7 +78,7 @@ $(document).ready(function() {
 
             chr_Icon.push(Img_url + "/icon");
 
-
+            renderIcon(Img_url + "/icon" , chr_data);
             // chr_List.sort(function (a, b) {
             //     return a.id - b.id; // Ordenar por id en orden ascendente
             // });
@@ -94,18 +92,21 @@ $(document).ready(function() {
         
     }
 
-    function renderIcon(chr_Icon){
+    function renderIcon(icon , data){
 
-        let icon_Img = chr_Icon;
-        $("#chr-selector").empty();
+        let icon_Img = icon;
+        let icon_data = data;
 
-            let pokeHTML = `
-                    <div class="col-2">
-                            <img src="${icon_Img}" class="" alt="...">
-                    </div>
+
+        // $("#chr-selector").empty();
+
+        let pokeHTML = `
+             <div class="col-2 ${icon_data.id}">
+                <img src="${icon_Img}" class="" alt="...">
+             </div>
             `;
 
-            $("#chr-selector").append(pokeHTML); 
+        $("#chr-selector").append(pokeHTML); 
         
     } 
     
