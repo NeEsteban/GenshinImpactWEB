@@ -1,5 +1,27 @@
 $(document).ready(function() {
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameID = urlParams.get('id');
+
+    console.log(gameID);
+    
+    fetch("https://genshin.jmp.blue/characters/" + gameID)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(result) {
+        
+      
+
+    })
+    .catch(function(err){
+       
+        
+    });
+
+    
+    
+    
     //quitar esto, usamos iconos nuestros, tienen que tener el nombre del id y todos con el mismo formato
     //este fetch nos sirve en la otra página
     function fetchChrImg(url , url_Data){
@@ -57,3 +79,7 @@ $(document).ready(function() {
         
         
 //     }
+
+
+
+  
