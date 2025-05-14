@@ -6,6 +6,10 @@ $(document).ready(function() {
     //lista de datos de los personajes
     let chr_Icon = [];
 
+    //selector de botón
+     let info_BTN = document.getElementById("info-btn");
+
+
     fetch("https://genshin.jmp.blue/characters")
     .then(function(response) {
         return response.json();
@@ -34,17 +38,59 @@ $(document).ready(function() {
 
        }
        console.log( chr_List);
-       
-  
+
+       //cambio de link e imagen seleccionando al personaje
+       //no sé optimizarlo 
+       $('body').on('click', 'img.albedo', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=albedo")
+            
+        });
+        $('body').on('click', 'img.alhaitham', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=alhaitham")
+            
+        });
+         $('body').on('click', 'img.aloy', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=aloy")
+            
+        });
+         $('body').on('click', 'img.amber', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=amber")
+            
+        });
+         $('body').on('click', 'img.arataki-itto', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=arataki-itto")
+            
+        });
+         $('body').on('click', 'img.arlecchino', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=arlecchino")
+            
+        });
+         $('body').on('click', 'img.ayaka', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayaka")
+            
+        });
+         $('body').on('click', 'img.ayato', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayato")
+            
+        });
+         $('body').on('click', 'img.baizhu', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=baizhu")
+            
+        });
+         $('body').on('click', 'img.barbara', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=barbara")
+            
+        });
+         $('body').on('click', 'img.beidou', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=beidou")
+            
+        });
+         $('body').on('click', 'img.bennett', function() {
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=bennett")
+            
+        });
+
       
-
-
-    //    console.log(url);
-    //    console.log(list);
-       
-    //    console.log(chr_Icon);
-        
-       
 
     })
     .catch(function(err){
@@ -64,11 +110,7 @@ $(document).ready(function() {
             chr_List.push(result);
 
             renderIcon(result);
-          
-            
-
-
-            
+  
         })
         .catch(function (err) {
             console.log(err);
@@ -79,25 +121,26 @@ $(document).ready(function() {
     
 
     function renderIcon(element){
-
-        console.log("funciono");
-        console.log(element);
-
        
         let chrHTML = `
-        <div id="${element.id}" class="col-2">
-        <img src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
+        <div class="col-2">
+                <img class="${element.id}" src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
         </div>
         `;
-   
+        
+        
         $("#chr-selector").append(chrHTML); 
  
-       
-                
-    
-
-        
-        
     } 
     
+    
+
+     
+    
+
+   
+
+    
+    
+
 });
