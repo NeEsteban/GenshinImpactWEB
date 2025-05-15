@@ -12,22 +12,41 @@
           <!-- MENÚ PRINCIPAL -->
           <nav id="menu">
 
-            <div id="menu-flex" class="row bg-success-subtle w-100 p-4">
-                <div id="logo" class="col-8">
-                    <a href="LandingPage.html"><img src="" alt=""></a>
-                </div>
-                <div class="row col-4">
-                    <button type="button" class="col"><a href="">Hoyoverse</a></button>
-                    <button type="button" class="col"><a href="">Juego</a></button>
-                    <button type="button" class="col"><a href="">Personajes</a></button>
-                </div>
+            <!-- <div id="logo">
+                <a href="LandingPage.html"><img src="" alt=""></a>
+                
+             </div> -->
+            
+            <!-- <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="btnCloseMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label> -->
+
+                    <div id="menu-flex" class="row bg-success-subtle p-4">
+                        <div id="logo" class="col-8 h-100">
+                            <a href="LandingPage.html" class="h-100"><img src="MEDIA/IMG/logo.png" class="h-100" alt=""></a>
+                        </div>
+                        <div class="row col-4 justify-content-space-around h-100">
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                            
+                            <button type="button" class="col-3 h-100"><a href="LandingPage.html">Hoyoverse</a></button>
+
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+
+                            <button type="button" class="col-3 h-100"><a href="">Juego</a></button>
+
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+
+                            <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
+                        </div>
+            </div>
         </nav>
 
     </header>
 
     <main>
 
-        <section id="chsn-chracter" class="container-fluid">
+        <section id="chsn-chracter" class="container-fluid p-0">
             <div class="chsn-chracter-all row px-5 py-3">
 
                 <!-- Imagen personaje elegido -->
@@ -52,12 +71,14 @@
                    <div id="build-container" class="col-11 justify-content-space-around text-center">
                         <div class="row justify-content-center align-items-center g3  px-4">
 
-                            <div class="col-6 h-100">
-                                <img src="MEDIA/IMG/banner.png" class="h-75 w-75 text-center" alt="">
+                            <div id ="vision-container" class="banner col-4 h-100 text-center">
                             </div>
      
-                            <div class="col-6 h-100">
-                                <img src="MEDIA/IMG/banner.png" class="h-75 w-75 text-center" alt="">
+                            <div id ="weapon-container" class="banner col-4 h-100 text-center">
+                            </div>
+
+                            <div id ="nation-container" class="banner col-4 h-100 text-center">
+                                
                             </div>
      
                             </div>

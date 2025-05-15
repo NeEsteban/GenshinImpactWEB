@@ -40,31 +40,81 @@ $(document).ready(function() {
 
         $("#main-info").append(details);
 
-        let name = `
-        <div class="row justify-content-space-between align-items-center namecard-${gameID} rounded-3 h-100">
-            <div class="row col align-items-center h-100">
-                <div class="col h-100">
-                    <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center" alt="Icono">
+        let name_4 = `
+        <div class="row justify-content-between align-items-center namecard-${gameID} rounded-3 h-100">
+            <div class="row col-5 align-items-center h-100">
+                <div class="col-3 h-100">
+                    <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center rounded-circle" alt="Icono">
                 </div>
-                <div class="col text-uppercase fw-bold">
-                    <p class=" align-items-center text-start">${infoChr.name}</p>
+                <div class="col-9 text-uppercase fw-bold">
+                    <p class=" align-items-center text-start  p-0 m-0">${infoChr.name}</p>
                 </div>
             </div>
-            <div class="row col align-items-center">
-                <div class="col">
-                    <p class=" align-items-center text-end">${infoChr.rarity}</p>
+            <div class="row col-7 align-items-center">
+                <div class="row col p-0">
+                <div class="col text-end p-0">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    </div>
                 </div>  
             </div>   
         </div>
         `;
 
-        $("#chr-namecard").append(name);
+        let name_5 = `
+        <div class="row justify-content-between  align-items-center namecard-${gameID} rounded-3 h-100">
+            <div class="row col-5 align-items-center h-100">
+                <div class="col-3 h-100">
+                    <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center rounded-circles" alt="Icono">
+                </div>
+                <div class="col-9 text-uppercase fw-bold">
+                    <p class=" align-items-center text-start p-0 m-0">${infoChr.name}</p>
+                </div>
+            </div>
+            <div class="row col-7 align-items-center">
+                <div class="row col p-0">
+                    <div class="col text-end p-0">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    </div>
+                </div>  
+            </div>   
+        </div>
+        `;
 
+        if(infoChr.rarity>4){
+            $("#chr-namecard").append(name_5);
+        }else{
+            $("#chr-namecard").append(name_4)
+        }
+        
+        let nation =`
+            <p class="m-0 pt-4">${infoChr.nation}</p>
+            <img src="MEDIA/IMG/Naciones/${infoChr.nation}.png" id="nation_img" class=" h-75 w-75" alt="Nation">
+        `;
 
+        $("#nation-container").append(nation);
+
+        let weapon =`
+            <img src="MEDIA/IMG/Armas/${infoChr.weapon}.png" id="weapon_img" class=" py-4 h-75 w-75" alt="Weapon">
+        `;
+
+        $("#weapon-container").append(weapon);
+
+        let vision =`
+        <img src="MEDIA/IMG/Visiones/${infoChr.vision}.png" id="vision_img" class=" py-4 h-75 w-75" alt="Vision">
+        `;
+
+        $("#vision-container").append(vision);
 
         // aquí nos gustaría poner el carruser de cartas
         let img = `
-            <img src="https://genshin.jmp.blue/characters/${gameID}/card" class="cardimg text-center" alt="card">
+            <img src="https://genshin.jmp.blue/characters/${gameID}/card" class="cardimg col-12" alt="card">
         `;
 
         $("#chsn-character-img").append(img);

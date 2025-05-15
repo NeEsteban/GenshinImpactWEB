@@ -1,3 +1,33 @@
+/* Fuentes */
+@font-face{
+    font-family: HYWenHei;
+    src: url(../MEDIA/FONTS/hywenhei.ttf); 
+}
+
+p{
+    font-family: HYWenHei;
+}
+
+/* Menú */
+#logo{
+    height: 5vh;
+}
+
+#menu-flex{
+    height: 10vh;
+}
+
+#menu-flex button{
+    background: none;
+    border: none;
+}
+
+#menu-flex button a{
+    font-family: HYWenHei;
+    text-decoration: none;
+}
+
+/* Chracter Info */
 #chsn-chracter{
     height: 85vh;
 }
@@ -13,7 +43,7 @@
 }
 
 #chsn-character-img .cardimg{
-    height: 80vh !important;
+    object-fit: fill;
 }
 
 #chr-namecard{
@@ -24,20 +54,32 @@
     height: 20vh;
 }
 
-#build-container{
-    height: 50vh;
-}
-
 #chr-namecard .namecard-albedo {
     background-image: url(https://genshin.jmp.blue/characters/albedo/namecard-background);
     background-size:cover;
+    background-position: center;
 
 }
 
 #chr-namecard .namecard-bennett {
     background-image: url(https://genshin.jmp.blue/characters/bennett/namecard-background);
     background-size:cover;
+    background-position: center;
 
 }
 
+.card-img-overlay {
+    position: absolute;
+    top: 50vh;
+    right: 50vw;
+    padding:0
+}
+
+.banner{
+    background-image: url(../MEDIA/IMG/banner.png);
+    /* background-size:contain; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
