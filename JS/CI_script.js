@@ -41,16 +41,20 @@ $(document).ready(function() {
         $("#main-info").append(details);
 
         let name = `
-        <div class="row justify-content-space-between pr-5 namecard-${gameID} rounded-3">
-            <div class="col">
-            <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-3" alt="Icono">
+        <div class="row justify-content-space-between align-items-center namecard-${gameID} rounded-3 h-100">
+            <div class="row col align-items-center h-100">
+                <div class="col h-100">
+                    <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center" alt="Icono">
+                </div>
+                <div class="col text-uppercase fw-bold">
+                    <p class=" align-items-center text-start">${infoChr.name}</p>
+                </div>
             </div>
-            <div class="col text-uppercase fw-bold">
-            <p>${infoChr.name}</p>
-            </div>
-            <div class="col">
-            <p>${infoChr.rarity}</p>
-            </div>
+            <div class="row col align-items-center">
+                <div class="col">
+                    <p class=" align-items-center text-end">${infoChr.rarity}</p>
+                </div>  
+            </div>   
         </div>
         `;
 
@@ -60,11 +64,7 @@ $(document).ready(function() {
 
         // aquí nos gustaría poner el carruser de cartas
         let img = `
-        <div class="">
-            <div class="">
-            <img src="https://genshin.jmp.blue/characters/${gameID}/card" class="img-fluid object-fit-cover" alt="card">
-            </div>
-        </div>
+            <img src="https://genshin.jmp.blue/characters/${gameID}/card" class="cardimg text-center" alt="card">
         `;
 
         $("#chsn-character-img").append(img);

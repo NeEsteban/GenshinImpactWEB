@@ -3,18 +3,41 @@
 }
 
 .chsn-chracter-all{
-    height: 86vh;
+    height: 100%;
     overflow: hidden;
+}
+
+#chsn-character-img{
+    height: 80vh !important;
+    overflow: hidden;
+}
+
+#chsn-character-img .cardimg{
+    height: 80vh !important;
+}
+
+#chr-namecard{
+    height: 10vh;
+}
+
+#main-info{
+    height: 20vh;
+}
+
+#build-container{
+    height: 50vh;
 }
 
 #chr-namecard .namecard-albedo {
     background-image: url(https://genshin.jmp.blue/characters/albedo/namecard-background);
     background-size:cover;
+
 }
 
 #chr-namecard .namecard-bennett {
     background-image: url(https://genshin.jmp.blue/characters/bennett/namecard-background);
     background-size:cover;
+
 }
 
 
