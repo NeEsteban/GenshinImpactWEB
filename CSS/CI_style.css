@@ -1,3 +1,20 @@
 #chsn-chracter{
     height: 85vh;
 }
+
+.chsn-chracter-all{
+    height: 86vh;
+    overflow: hidden;
+}
+
+#chr-namecard .namecard-albedo {
+    background-image: url(https://genshin.jmp.blue/characters/albedo/namecard-background);
+    background-size:cover;
+}
+
+#chr-namecard .namecard-bennett {
+    background-image: url(https://genshin.jmp.blue/characters/bennett/namecard-background);
+    background-size:cover;
+}
+
+

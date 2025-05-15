@@ -28,7 +28,7 @@ $(document).ready(function() {
         
         let details = `
         <div class="row">
-            <div class="">
+            <div class="fw-bold">
             <p>${infoChr.title}</p>
             </div>
             <div class="">
@@ -41,11 +41,11 @@ $(document).ready(function() {
         $("#main-info").append(details);
 
         let name = `
-        <div class="row justify-content-space-between pr-5">
+        <div class="row justify-content-space-between pr-5 namecard-${gameID} rounded-3">
             <div class="col">
-            <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="" alt="Icono">
+            <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-3" alt="Icono">
             </div>
-            <div class="col">
+            <div class="col text-uppercase fw-bold">
             <p>${infoChr.name}</p>
             </div>
             <div class="col">
@@ -56,6 +56,19 @@ $(document).ready(function() {
 
         $("#chr-namecard").append(name);
 
+
+
+        // aquí nos gustaría poner el carruser de cartas
+        let img = `
+        <div class="">
+            <div class="">
+            <img src="https://genshin.jmp.blue/characters/${gameID}/card" class="img-fluid object-fit-cover" alt="card">
+            </div>
+        </div>
+        `;
+
+        $("#chsn-character-img").append(img);
+
     }
     
 
@@ -63,18 +76,16 @@ $(document).ready(function() {
 
     //quitar esto, usamos iconos nuestros, tienen que tener el nombre del id y todos con el mismo formato
     //este fetch nos sirve en la otra página
-    function fetchChrImg(url , url_Data){
-        let Img_url = url;
-        let chr_data = url_Data;
-        let link = url;
+    function fetchChrImg(data){
+        let dataImg = data;
 
-        fetch(Img_url + "/list")
+        fetch("https://genshin.jmp.blue/characters/" + gameID + "/list")
         .then(function (response) {
             return response.json();
         })
         .then(function (result) {
-           
-            // chr_Imgs.push(result);
+            let dataImg = result;
+
 
             chr_Icon.push(Img_url + "/icon");
 
