@@ -5,13 +5,16 @@ $(document).ready(function() {
 
     console.log(gameID);
     
+    
     fetch("https://genshin.jmp.blue/characters/" + gameID)
     .then(function(response) {
         return response.json();
     })
     .then(function(result) {
-        
-      
+        let InfoCS = result;
+        console.log(InfoCS);
+        renderText(InfoCS);
+          
 
     })
     .catch(function(err){
@@ -20,8 +23,44 @@ $(document).ready(function() {
     });
 
     
+    function renderText(info){
+        let infoChr = info;
+        
+        let details = `
+        <div class="row">
+            <div class="">
+            <p>${infoChr.title}</p>
+            </div>
+            <div class="">
+            <p>${infoChr.description}</p>
+            </div>
+
+        </div>
+        `;
+
+        $("#main-info").append(details);
+
+        let name = `
+        <div class="row justify-content-space-between pr-5">
+            <div class="col">
+            <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="" alt="Icono">
+            </div>
+            <div class="col">
+            <p>${infoChr.name}</p>
+            </div>
+            <div class="col">
+            <p>${infoChr.rarity}</p>
+            </div>
+        </div>
+        `;
+
+        $("#chr-namecard").append(name);
+
+    }
     
-    
+
+
+
     //quitar esto, usamos iconos nuestros, tienen que tener el nombre del id y todos con el mismo formato
     //este fetch nos sirve en la otra página
     function fetchChrImg(url , url_Data){
