@@ -23,10 +23,14 @@
     src: url(../MEDIA/FONTS/hywenhei.ttf); 
 }
 
-main{
+body{
     background-image: url(../MEDIA/IMG/Fondo.png) ;
     background-repeat: repeat;
     background-size: 50%;
+    
+}
+
+main{
     height: 88vh;
     
 }
@@ -35,6 +39,7 @@ main{
 /* Menú */
 #logo{
     height: 5vh;
+    display: flex;
 }
 
 #menu-flex{
@@ -158,9 +163,87 @@ div img.chr-btn{
     font-family: HYWenHei;
 }
 
-
-
 .btn-img{
 
     width: 15vw;
+}
+
+.space-movile{
+    display: none;
+}
+
+
+/*MEDIA QUERY*/
+
+/* Tablet */
+
+@media screen and (max-width: 900px) {
+
+    /* MENU */
+   #logo img{
+    justify-self: flex-start;
+   }
+
+   #chr-selector div img.chr-btn {
+        height: 11vh;
+   }
+    
+   .btn-img{
+        width:30vw;
+   }
+
+   #data-cont{
+    margin-left: 2vw;
+    margin-right: 2vw;
+   }
+
+   #main-img-cont{
+    margin-left: 2vw;
+    margin-right: 2vw;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+    .divider-cont, .divider-horizontal{
+        display: none;
+    }
+
+
+    #data-cont{
+        height: auto;
+        padding: 0% !important;
+        margin: 3vh;
+    }
+
+    #data-cont div{
+        height: auto;
+        padding: 0%;
+    }
+
+    #main-container{
+        height: 50vh;
+    }
+
+    .space-movile{
+        display: block;
+    }
+
+    main{
+        height: fit-content;
+    }
+
+    #main-container{
+        height: fit-content !important;
+    }
+
+    #chr-selector{
+        height: auto;
+        padding-left: 5vw !important;
+        justify-content: space-between !important;
+    }
+
+    #chr-selector div.icon-cont{
+        margin: 3vw;
+    }
 }
