@@ -28,7 +28,7 @@ $(document).ready(function() {
         
         let details = `
         <div class="row">
-            <div class="fw-bold">
+            <div class="title fw-bold">
             <p>${infoChr.title}</p>
             </div>
             <div class="">
@@ -42,21 +42,21 @@ $(document).ready(function() {
 
         let name_4 = `
         <div class="row justify-content-between align-items-center namecard-${gameID} rounded-3 h-100">
-            <div class="row col-5 align-items-center h-100">
+            <div class="row col-6 align-items-center h-100">
                 <div class="col-3 h-100">
                     <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center rounded-circle" alt="Icono">
                 </div>
-                <div class="col-9 text-uppercase fw-bold">
+                <div class="col-6 text-uppercase fw-bold">
                     <p class=" align-items-center text-start  p-0 m-0">${infoChr.name}</p>
                 </div>
             </div>
-            <div class="row col-7 align-items-center">
+            <div class="row col-5 align-items-center">
                 <div class="row col p-0">
                 <div class="col text-end p-0">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
                     </div>
                 </div>  
             </div>   
@@ -65,22 +65,22 @@ $(document).ready(function() {
 
         let name_5 = `
         <div class="row justify-content-between  align-items-center namecard-${gameID} rounded-3 h-100">
-            <div class="row col-5 align-items-center h-100">
+            <div class="row col-6 align-items-center h-100">
                 <div class="col-3 h-100">
-                    <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center rounded-circles" alt="Icono">
+                    <img src="MEDIA/IMG/Iconos/${infoChr.id}.webp" class="p-2 h-100 align-items-center rounded-circle" alt="Icono">
                 </div>
                 <div class="col-9 text-uppercase fw-bold">
                     <p class=" align-items-center text-start p-0 m-0">${infoChr.name}</p>
                 </div>
             </div>
-            <div class="row col-7 align-items-center">
+            <div class="row col-6 align-items-center">
                 <div class="row col p-0">
                     <div class="col text-end p-0">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
-                    <img src="MEDIA/IMG/Star_icon.svg" class="">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
+                    <img src="MEDIA/IMG/Star_rarity.svg" class="star-rarity">
                     </div>
                 </div>  
             </div>   
@@ -101,13 +101,15 @@ $(document).ready(function() {
         $("#nation-container").append(nation);
 
         let weapon =`
-            <img src="MEDIA/IMG/Armas/${infoChr.weapon}.png" id="weapon_img" class=" py-4 h-75 w-75" alt="Weapon">
+        <p class="m-0 pt-4">${infoChr.weapon}</p>
+            <img src="MEDIA/IMG/Armas/${infoChr.weapon}.png" id="weapon_img" class=" h-75 w-75" alt="Weapon">
         `;
 
         $("#weapon-container").append(weapon);
 
         let vision =`
-        <img src="MEDIA/IMG/Visiones/${infoChr.vision}.png" id="vision_img" class=" py-4 h-75 w-75" alt="Vision">
+        <p class="m-0 pt-4">${infoChr.vision}</p>
+        <img src="MEDIA/IMG/Visiones/${infoChr.vision}.png" id="vision_img" class=" h-75 w-75" alt="Vision">
         `;
 
         $("#vision-container").append(vision);

@@ -1,3 +1,22 @@
+:root{
+    /* Variables texto  */
+    --title: 80pt;
+    --subtitle: 22pt;
+    --textSize: 13pt;
+
+    --titleMovile: 50pt;
+    --subtitleMovile: 20pt;
+
+    /* Variables color */
+    --color1: #FFFAEE;
+    --color2: #9E7A60;
+    --color3: #BE8E72;
+    --color4: #597795;
+    --color5: #9ABAD3;
+    --color6: #EEB06B;
+    --color7: #3B4252;
+}
+
 /* Fuentes */
 @font-face{
     font-family: HYWenHei;
@@ -6,6 +25,8 @@
 
 p{
     font-family: HYWenHei;
+    color: var(--color7);
+    font-size: var(--textSize);
 }
 
 /* Menú */
@@ -15,6 +36,7 @@ p{
 
 #menu-flex{
     height: 10vh;
+    background-image: linear-gradient(var(--color2), var(--color3));
 }
 
 #menu-flex button{
@@ -25,11 +47,15 @@ p{
 #menu-flex button a{
     font-family: HYWenHei;
     text-decoration: none;
+    color: var(--color1);
 }
 
 /* Chracter Info */
 #chsn-chracter{
     height: 85vh;
+    background-image: url(../MEDIA/IMG/Fondo.png);
+    background-size: 50%;
+    background-repeat: repeat;
 }
 
 .chsn-chracter-all{
@@ -40,6 +66,8 @@ p{
 #chsn-character-img{
     height: 80vh !important;
     overflow: hidden;
+    border-color: var(--color2) !important;
+    
 }
 
 #chsn-character-img .cardimg{
@@ -52,20 +80,95 @@ p{
 
 #main-info{
     height: 20vh;
+    border-color: var(--color2) !important;
+    background-color: var(--color1);
+}
+
+#chr-namecard p{
+    color: var(--color1);
+    font-size: var(--subtitle);
+}
+
+.star-rarity{
+    color: var(--color1);
 }
 
 #chr-namecard .namecard-albedo {
     background-image: url(https://genshin.jmp.blue/characters/albedo/namecard-background);
     background-size:cover;
     background-position: center;
-
 }
 
 #chr-namecard .namecard-bennett {
     background-image: url(https://genshin.jmp.blue/characters/bennett/namecard-background);
     background-size:cover;
     background-position: center;
+}
 
+#chr-namecard .namecard-alhaitham {
+    background-image: url(https://genshin.jmp.blue/characters/alhaitham/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-aloy {
+    background-image: url(https://genshin.jmp.blue/characters/aloy/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-ayato {
+    background-image: url(https://genshin.jmp.blue/characters/ayato/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-amber {
+    background-image: url(https://genshin.jmp.blue/characters/amber/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-arlecchino {
+    background-image: url(https://genshin.jmp.blue/characters/arlecchino/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-arlecchino {
+    background-image: url(https://genshin.jmp.blue/characters/arlecchino/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-ayaka {
+    background-image: url(https://genshin.jmp.blue/characters/ayaka/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-arataki-itto {
+    background-image: url(https://genshin.jmp.blue/characters/arataki-itto/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-baizhu {
+    background-image: url(https://genshin.jmp.blue/characters/baizhu/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-barbara {
+    background-image: url(https://genshin.jmp.blue/characters/barbara/namecard-background);
+    background-size:cover;
+    background-position: center;
+}
+
+#chr-namecard .namecard-beidou {
+    background-image: url(https://genshin.jmp.blue/characters/beidou/namecard-background);
+    background-size:cover;
+    background-position: center;
 }
 
 .card-img-overlay {
