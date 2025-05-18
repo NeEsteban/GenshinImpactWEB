@@ -43,6 +43,15 @@ $(document).ready(function() {
        }
        console.log( chr_List);
 
+       //animaciones
+       $('body').on('mouseover', 'div img.chr-btn' , function(){
+            $(this).css({"transform": "scale(1.1)", "cursor": "pointer"});
+        });
+
+        $('body').on('mouseleave', 'div img.chr-btn' , function(){
+            $(this).css({"transform": "scale(1)"});
+        });
+
        //cambio de link e imagen seleccionando al personaje
        //no sé optimizarlo 
        $('body').on('click', 'img.albedo', function() {
@@ -218,12 +227,9 @@ $(document).ready(function() {
         console.log("funciono");
         
         if ( percentage < 100 ) {
-            
-            
+
             $("#loader").css('visibility', 'visible');
             $("#loader").fadeIn(333);
-            
-           
 
             percentage++;
             $(".loader-text").text(percentage + "%");
@@ -235,9 +241,6 @@ $(document).ready(function() {
                 
             });
         } 
-
-        
-
     }
 
      
