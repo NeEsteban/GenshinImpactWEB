@@ -123,8 +123,8 @@ $(document).ready(function() {
     function renderIcon(element){
        
         let chrHTML = `
-        <div class="col-2">
-                <img class="${element.id}" src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
+        <div class="col-9 col-lg-3 col-md-4  p-2 ">
+                <img class="${element.id} chr-btn rounded-circle" src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
         </div>
         `;
         

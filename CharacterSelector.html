@@ -4,73 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/CS_style.css">
+
 </head>
 <body>
     
     <header>
 
-        <!-- MENÚ PRINCIPAL -->
+          <!-- MENÚ PRINCIPAL -->
         <nav id="menu">
 
-            <div id="logo">
+            <!-- <div id="logo">
                 <a href="LandingPage.html"><img src="" alt=""></a>
                 
-             </div>
+             </div> -->
             
-            <input type="checkbox" id="menuToggle">
+            <!-- <input type="checkbox" id="menuToggle">
                     <label for="menuToggle" class="btnCloseMenu">
                         <i class="fa-solid fa-bars"></i>
-                    </label>
+                    </label> -->
 
-            <ul class="menu-flex">
+                    <div id="menu-flex" class="row bg-success-subtle w-100 p-4">
+                        <div id="logo" class="col-8 h-100">
+                            <a href="LandingPage.html" class="h-100"><img src="MEDIA/IMG/logo.png" class="h-100" alt=""></a>
+                        </div>
+                        <div class="row col-4 justify-content-space-around h-100">
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                            
+                            <button type="button" class="col-3 h-100"><a href="">Hoyoverse</a></button>
+
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+
+                            <button type="button" class="col-3 h-100"><a href="">Juego</a></button>
+
+                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+
+                            <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
+                        </div>
+                
+
+            </div>
+            
+            <!-- <ul class="menu-flex">
                 <li><a href="">Hoyoverse</a></li>
                 <li><a href="">Juego</a></li>
                 <li><a href="">Personajes</a></li>
-            </ul>
+            </ul> -->
         </nav>
 
     </header>
 
     <main>
 
-        <div class="row justify-content-center">
-            <!-- Foto del personaje escogido -->
-            <section class="chr-img row ">
-                <div class="row  justify-content-center align-items-center">
-                    <div class="col-12 col-md-10 col-lg-6">
-                        <img  src="" alt="">
+        <section id="chr-selection-cont" class="container-fluid">
+            <div class="row justify-content-center align-content-center h-100">
+
+                <div class="col-1 row justify-content-center">
+
+                    <!-- divisor visual -->
+                    <div class="divider-horizontal flex-fill h-100 text-center">
+                        <div class="">
+                            <img  class="" src="MEDIA/IMG/divisor_vertical.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                    
+
+                
+                <!-- Foto del personaje escogido -->
+                
+                <div id="main-img-cont" class=" data-cont col-5 row  justify-content-center align-items-center  mt-3 border border-2 rounded">
+
+                     <div id="chr-main" class=" col-12 col-md-10 col-lg-10 ">
+                        <img class="object-fit-fill" src="https://genshin.jmp.blue/characters/bennett/gacha-splash" alt="bennett splash art">
                     </div>
     
                     <!-- para saltar entre columnas -->
                     <div class="w-100"></div>
     
-                    <div id="info-btn" class="col-6">
+                    <div id="info-btn" class="col-6 text-center ">
+                        
                         <a id="info-btn" href="">Info</a>
                     </div>
                 </div>
-            </section>
+                
+                   
+                <div class="col-1 row justify-content-center">
 
+                    <!-- divisor visual -->
+                    <div class="divider-horizontal flex-fill h-100 text-center">
+                        <div class="">
+                            <img  class="" src="MEDIA/IMG/divisor_vertical.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" data-cont col-4 row justify-content-center align-items-center flex-fill mt-3 border border-2 rounded">
+
+                     <!-- Area de seleccion de personajes y naciones -->
+                    <div class="col gap-4">
+                        <!-- area de seleccion de personajes -->
+                        <div id="chr-selector" class="col row justify-content-center h-100 d-flex flex-wrap ">
+    
+                        </div>
+                    </div> 
+                   
+
+                </div>
+
+                 
+                 <div class="col-1 row justify-content-center">
+
+                    <!-- divisor visual -->
+                    <div class="divider-horizontal flex-fill h-100 text-center">
+                        <div class="">
+                            <img  class="" src="MEDIA/IMG/divisor_vertical.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
            
     
-            <!-- Area de seleccion de personajes y naciones -->
-            <section class="selection row">
-                <!-- divisor visual -->
-                <div class="divider-horizontal row">
-                    <div class="col-2 p-2">
-                        <img src="" alt="">
-                    </div>
-                </div>
-    
-                <!-- area de seleccion de personajes -->
-                <div id="chr-selector" class="row">
-    
-                </div>
-    
-                <!-- divisor visual -->
-                <div class="divider-horizontal"></div>
+           
     
                 <!-- seleccion de naciones-->
-                <div class="nation-selector">
+                <!-- <div class="nation-selector">
                     <div class="nation-img">
                         <img src="" alt="">
                     </div>
@@ -98,10 +158,12 @@
                     <div class="nation-img">
                         <img src="" alt="">
                     </div>
-                </div>
+                </div> -->
     
-            </section>
-        </div>
+            </div>
+        </section>
+
+        
 
     </main>
 

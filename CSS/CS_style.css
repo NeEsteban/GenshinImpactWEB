@@ -1,3 +1,59 @@
-#chrSelectorCont{
+/* Menú */
+#logo{
+    height: 5vh;
+}
+
+#menu-flex{
+    height: 10vh;
+}
+
+#menu-flex button{
+    background: none;
+    border: none;
+}
+
+#menu-flex button a{
+    font-family: HYWenHei;
+    text-decoration: none;
+}
+
+
+/* SLECTOR DE PERSONAJES */
+#chr-selection-cont{
     height: 85vh;
 }
+
+#chr-selector{
+    
+}
+
+.divider-horizontal{
+    padding-top: 5vh;
+}
+
+.divider-horizontal img{
+    height: 80vh !important;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#chr-main{
+    overflow: hidden;
+}
+
+#chr-main img{
+    height:65vh !important ;
+    display: flex;
+    align-self: center !important;
+}
+
+.data-cont{
+    height: 75vh;
+    align-self:center ;
+}
+
+/* #info-btn{
+    background-image: url(../MEDIA/IMG/button.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+} */
