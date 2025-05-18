@@ -14,8 +14,8 @@ body {
 }
 
 .swiper {
-  width: 100%;
-  height: 75vh;
+  width: 80%;
+  height: 60vh;
 }
 
 .swiper-slide {
@@ -48,7 +48,7 @@ body {
 }
 
 .swiper-button-next img{
-    height: 100%;
+    height: 150%;
 }
 
 .swiper-button-prev{
@@ -56,7 +56,7 @@ body {
 }
 
 .swiper-button-prev img{
-    height: 100%;
+    height: 150%;
 }
 
 .swiper-pagination img{

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>GenshinWEB</title>
 
+    <link rel="icon" href="MEDIA/IMG/favicon.ico">
+
     <link rel="stylesheet" href="CSS/LP_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/Carrusel_style.css">
@@ -33,11 +35,11 @@
                         <div class="row col-4 justify-content-space-around h-100">
                             <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
                             
-                            <button type="button" class="col-3 h-100"><a href="">Hoyoverse</a></button>
+                            <button type="button" class="col-3 h-100"><a href="#slideshow">Hoyoverse</a></button>
 
                             <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
 
-                            <button type="button" class="col-3 h-100"><a href="">Juego</a></button>
+                            <button type="button" class="col-3 h-100"><a href="#game-info">Juego</a></button>
 
                             <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
 
@@ -57,86 +59,112 @@
     </header>
 
     <main>
-
-       <div id="main-img" class="container-fluid text-center">
-            <img src="MEDIA/IMG/mainImg.png" class="img-fluid h-100 text-center p-0" alt="Protagonistas de GENSHIN IMPACT en un campo de flores blancas">
+        <div id="main-img" class="container-fluid text-center w-100 p-0">
+            <img src="MEDIA/IMG/mainImg.png" class="img-fluid w-100 text-center p-0" alt="Protagonistas de GENSHIN IMPACT en un campo de flores blancas">
        </div>
+        <div id="all-bg" class="text-center row">
+            <div id="left-bg" class="text-center col-1"></div>
+            <div id="main-bg" class="text-center col-10 border border-5">
+           <!-- SLIDESHOW -->
+           <section id="slideshow" class="container py-4 w-100">
+    
+            <h1 class="text-center pt-3 ">Disfruta de la aventura</h1>
 
-       <!-- SLIDESHOW -->
-       <section id="slideshow" class="container py-4">
-
-        <h1 class="text-center">Disfruta de la aventura</h1>
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="MEDIA/IMG/slideShow_img1.png"></div>
-            <div class="swiper-slide"><img src="MEDIA/IMG/slideShow_img2.png"></div>
-            <div class="swiper-slide"><img src="MEDIA/IMG/slideShow_img3.png"></div>
-            </div>
-            <div class="swiper-button-next"><img src="MEDIA/IMG/next_icon.png"></div>
-            <div class="swiper-button-prev"><img src="MEDIA/IMG/prev_icon.png" alt=""></div>
-            <div class="swiper-pagination"><img src="MEDIA/IMG/MEDIA/IMG/Star_icon.svg" alt=""></div>
-        </div>
-          
-       </section>
-
-       <div class="divider container p-4 col-8">
-        <img src="MEDIA/IMG/divisor_2.png" class="w-100" alt="Divisor">
-       </div>
-
-       <section id="game-info" class="container">
-        <div class="row" >
-            <div class="game-Img col w-50">
-                <img src="MEDIA/IMG/slideShow_img1.png" class="w-100" alt="">
+            <div class="divider container pb-4 col-8 ">
+                <img src="MEDIA/IMG/divisor_2.png" class="w-100" alt="Divisor">
             </div>
 
-             <div class="game-text col ">
-             <p>
-                Genshin Impact es un videojuego de rol de acción para dispositivos móviles y ordenador desarrollado por miHoYo.
-                <br>
-                <br>
-                Ambientado en Teyvat, la historia se centra en el Viajero, un aventurero interestelar que despierta 500 años después de ser separado de su hermana gemela. Con la ayuda de Paimon, el protagonista debe recorrer las 7 naciones con el fin de desentrañar los misterios del mundo y encontrar a su hermana.
-                <br>
-                <br>
-                Genshin Impact es un juego de rol de acción de mundo abierto que permite al jugador controlar uno de los cuatro personajes intercambiables en un grupo. El jugador puede controlar su personaje y realizar acciones como correr, escalar, nadar y deslizarse, todo ello limitado por la resistencia. Algunos personajes poseen habilidades que pueden alterar el entorno y el mapa cuenta con puntos de teletransportación que permiten al jugador moverse rápidamente.
-            </p>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="MEDIA/IMG/slideShow_img1.png"></div>
+                <div class="swiper-slide"><img src="MEDIA/IMG/slideShow_img2.png"></div>
+                <div class="swiper-slide"><img src="MEDIA/IMG/slideShow_img3.png"></div>
+                </div>
+                <div class="swiper-button-next"><img src="MEDIA/IMG/next_icon.png"></div>
+                <div class="swiper-button-prev"><img src="MEDIA/IMG/prev_icon.png" alt=""></div>
+                <div class="swiper-pagination"><img src="MEDIA/IMG/MEDIA/IMG/Star_icon.svg" alt=""></div>
             </div>
-        </div>
-            
-       </section>
+              
+           </section>
+    
+           <div class="divider container p-4 col-8 ">
+            <img src="MEDIA/IMG/divisor_2.png" class="w-100" alt="Divisor">
+           </div>
+    
+           <section id="game-info" class="container">
+            <div class="info-left row align-items-center px-4" >
+                <div class="game-Img col w-50 pe-4">
+                    <img src="MEDIA/IMG/img_game.png" class="w-100 py-4" alt="Los hermanos">
+                   <p>
+                    Genshin Impact es un videojuego de rol de acción para dispositivos móviles y ordenador desarrollado por miHoYo.
+                   </p> 
+                </div>
+    
+                 <div id="game-text" class=" col border border-5 rounded">
+                 <p class="p-4 align-items-center">
+                    Ambientado en Teyvat, la historia se centra en el Viajero, un aventurero interestelar que despierta 500 años después de ser separado de su hermana gemela. 
+                    <br>
+                    Con la ayuda de Paimon, el protagonista debe recorrer las 7 naciones con el fin de desentrañar los misterios del mundo y encontrar a su hermana.
+                    <br>
+                    <br>
+                    Genshin Impact es un juego de rol de acción de mundo abierto que permite al jugador controlar uno de los cuatro personajes intercambiables en un grupo. 
+                    <br>
+                    El jugador puede controlar su personaje y realizar acciones como correr, escalar, nadar y deslizarse, todo ello limitado por la resistencia. Algunos personajes poseen habilidades que pueden alterar el entorno y el mapa cuenta con puntos de teletransportación que permiten al jugador moverse rápidamente.
+                </p>
+                </div>
+            </div>
+                
+           </section>
+    
+           <div class="divider container p-4 pb-5 col-8">
+                <img src="MEDIA/IMG/divisor_1.png" class="w-100" alt="Divisor">
+           </div>
+    
+           <section id="chr-showcase" class="container pt-5 pb-5 vw-80">
+            <div id ="img-chr-showcase"  class="row d-flex justify-content-center px-5 pb-2">
+                <div id="chr-select" class="row col-3 h-100">
+                    <img id="venti_chrc" class="w-100" src="MEDIA/IMG/IconosLP/venti.png" alt="Venti">
+                    <img id="iansan_chrc" class="w-100" src="MEDIA/IMG/IconosLP/iansan.png" alt="Iansan">
+                    <img id="xilonen_chrc" class="w-100" src="MEDIA/IMG/IconosLP/xilonen.png" alt="Xilonen">
+                    <img id="xianyun_chrc" class="w-100" src="MEDIA/IMG/IconosLP/xianyun.png" alt="Xianyun">
+                </div>
+                <div id="show-chr" class="col-9 bg-primary-subtle h-100">
+                    <img src="MEDIA/IMG/mainImg.png" id="main_img" class="img-fluid h-100">
+                    <!-- <img id="main_map" class="img-fluid h-100 z-3" src="MEDIA/IMG/mainImg.png"> -->
+                </div>
+            </div>
+            <div id ="btn-chr-showcase" class="row py-2">
+                <button id="chr-btn" class="text-center container col-4 p-4 pb-5 h-25 align-items-center"><a href="CharacterSelector.html">¡Más personajes!</a></button>
+            </div>         
+                
+           </section>
 
-       <div class="divider container p-4 pb-5 col-8">
-            <img src="MEDIA/IMG/divisor_1.png" class="w-100" alt="Divisor">
-       </div>
-
-
-       <section id="chr-showcase" class="container pt-5 pb-5 vw-80">
-        <div id ="img-chr-showcase"  class="row h-100">
-            <div id="chr-select" class="row col-3 bg-success-subtle h-100">
-                <div class="bg-secondary-subtle"></div>
-                <div class="bg-secondary"></div>
-                <div class="bg-secondary-subtle"></div>
-                <div class="bg-secondary"></div>
             </div>
-            <div id="show-chr" class="col-9 bg-primary-subtle h-100">
-                <img src="MEDIA/IMG/mainImg.png" class="img-fluid h-100" alt="...">
-            </div>
-        </div>
-        <div id ="btn-chr-showcase" class="row">
-            <div id="chr-btn" class="text-center container col p-4 h-100">
-                <img src="MEDIA/IMG/button.png" class="" alt="...">
-            </div>
-        </div>         
-            
-       </section>
+            <div id="right-bg" class="text-center col-1"></div>
+        </div>  
 
     </main>
 
-    <footer class="bg-primary-subtle">
-        <div class="pt-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit nam ratione at delectus ut veritatis rerum dolores omnis! Incidunt tempore veritatis amet alias vel culpa animi veniam earum provident.</p>
+    <footer>
+        <div class="social-btns d-flex justify-content-center align-items-center pt-5 ">
+            <a href="https://www.facebook.com/GenshinImpact/" target="_blank" class="px-2">
+                <img src="MEDIA/IMG/Logos/facebook_icon.svg" class="social-icon" alt="Facebook">
+            </a>
+            <a href="https://x.com/genshinimpact" target="_blank" class="px-2">
+                <img src="MEDIA/IMG/Logos/x_icon.svg" class="social-icon" alt="X">
+            </a>
+            <a href="https://www.instagram.com/genshinimpact/" target="_blank" class="px-2">
+                <img src="MEDIA/IMG/Logos/instagram_icon.svg" class="social-icon" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/discover/genshin-impact-official?lang=es" target="_blank" class="px-2">
+                <img src="MEDIA/IMG/Logos/tiktok_icon.svg" class="social-icon" alt="TikTok" >
+            </a>
         </div>
-        <div class="social-btns"></div>
+        <div class="pt-3 p-4 d-flex justify-content-center w-100">
+            <p>¡Siguenos en nuestra redes sociales y sigue la aventura!</p>
+        </div>
+        
 
     </footer>
 

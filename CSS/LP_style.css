@@ -1,8 +1,8 @@
 :root{
     /* Variables texto  */
-    --title: 80pt;
+    --title: 35pt;
     --subtitle: 22pt;
-    --textSize: 13pt;
+    --textSize: 12pt;
 
     --titleMovile: 50pt;
     --subtitleMovile: 20pt;
@@ -32,7 +32,7 @@ p{
 *{
     scroll-snap-type: y mandatory;
     scroll-padding-top: 10vh;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 /* Menú */
@@ -63,10 +63,24 @@ p{
     font-family: HYWenHei;
 }
 
-
-
 h1{
     font-family: HYWenHei;
+}
+
+#main-bg{
+    background-image: url(../MEDIA/IMG/Fondo.png);
+    background-size: 50%;
+    border-color: var(--color3) !important;
+}
+
+#left-bg{
+    background-color: var(--color2);
+
+}
+
+#right-bg{
+    background-color: var(--color2);
+    
 }
 
 /* ImagenPrincipal */
@@ -75,6 +89,7 @@ h1{
     /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%); */
     width: 100vw;
     scroll-snap-align: start;
+    overflow: hidden;
     
 }
 
@@ -84,13 +99,20 @@ h1{
     height: 90vh;
 }
 
-#slideshowContainer{
-    height: 40vh;
+#slideshow h1{
+    font-size: var(--title);
+    color: var(--color4);
 }
 
 /* Game Info */
 #game-info{
     scroll-snap-align: center;
+}
+
+#game-text{
+    background-color: var(--color1);
+    border-color: var(--color2) !important;
+
 }
 
 /* Showcase de Pesonajes */
@@ -99,11 +121,54 @@ h1{
     height: 90vh;
 }
 
-#img-chr-showcase{
-    height: 90vh;
+#chr-select img{
+    width: 100%;
 }
+
+#img-chr-showcase{
+    height: 90%;
+}
+
+#show-chr{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+}
+
+/* #main-map{
+    position: absolute;
+} */
 
 #btn-chr-showcase{
-    height: 10vh;
+    height: 10%;
 }
 
+#chr-button{
+    background-image: url(../MEDIA/IMG/button.png); 
+    background-size: cover;
+    border: none;
+    cursor: pointer; 
+}
+
+/* Footer*/
+footer{
+    scroll-snap-align: end;
+    background-color: var(--color2);
+}
+
+footer p{
+    color: var(--color1);
+}
+
+.social-btns{
+    height: 50%;
+
+}
+
+.social-icon{
+    color: var(--color1) !important;
+}
+
+.social-icon :hover{
+    color: var(--color3) !important;
+}
