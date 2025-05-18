@@ -9,6 +9,10 @@ $(document).ready(function() {
     //selector de botón
      let info_BTN = document.getElementById("info-btn");
 
+     //loader
+      let percentage = 0;
+    let deltaTime = 20;
+
 
     fetch("https://genshin.jmp.blue/characters")
     .then(function(response) {
@@ -39,54 +43,136 @@ $(document).ready(function() {
        }
        console.log( chr_List);
 
+       //animaciones
+       $('body').on('mouseover', 'div img.chr-btn' , function(){
+            $(this).css({"transform": "scale(1.1)", "cursor": "pointer"});
+        });
+
+        $('body').on('mouseleave', 'div img.chr-btn' , function(){
+            $(this).css({"transform": "scale(1)"});
+        });
+
        //cambio de link e imagen seleccionando al personaje
        //no sé optimizarlo 
        $('body').on('click', 'img.albedo', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=albedo")
-            
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=albedo");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/albedo/gacha-splash");
+            });
+            IMGLoader();
+ 
+
         });
         $('body').on('click', 'img.alhaitham', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=alhaitham")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=alhaitham");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","MEDIA/IMG/alhaitham-gacha-splash.webp");
+            });
+            IMGLoader();
             
         });
          $('body').on('click', 'img.aloy', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=aloy")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=aloy");
+
+             $("#chr-img").fadeOut(999, function(){
+                 $("#chr-img").attr("src","https://genshin.jmp.blue/characters/aloy/gacha-splash");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.amber', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=amber")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=amber");
+
+             $("#chr-img").fadeOut(999, function(){
+                 $("#chr-img").attr("src","https://genshin.jmp.blue/characters/amber/gacha-splash");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.arataki-itto', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=arataki-itto")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=arataki-itto");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/arataki-itto/gacha-splash");
+        
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.arlecchino', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=arlecchino")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=arlecchino");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/arlecchino/gacha-splash");
+              
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.ayaka', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayaka")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayaka");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/ayaka/gacha-splash");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.ayato', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayato")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayato");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/ayato/gacha-splash");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.baizhu', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=baizhu")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=baizhu");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","MEDIA/IMG/baizhu-gacha-splash.webp");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.barbara', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=barbara")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=barbara");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/barbara/gacha-splash");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.beidou', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=beidou")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=beidou");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/beidou/gacha-splash");
+            });
+            IMGLoader();
+
             
         });
          $('body').on('click', 'img.bennett', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=bennett")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=bennett");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/bennett/gacha-splash");
+                
+            });
+            IMGLoader();
             
         });
 
@@ -132,8 +218,30 @@ $(document).ready(function() {
         $("#chr-selector").append(chrHTML); 
  
     } 
-    
-    
+
+
+   
+
+    //funcion para simular carga de imagener
+    function IMGLoader(){
+        console.log("funciono");
+        
+        if ( percentage < 100 ) {
+
+            $("#loader").css('visibility', 'visible');
+            $("#loader").fadeIn(333);
+
+            percentage++;
+            $(".loader-text").text(percentage + "%");
+            setTimeout(IMGLoader, deltaTime);
+        } else {
+            $("#loader").fadeOut(500, function() {
+                $("#chr-img").fadeIn(333);
+                percentage = 0;
+                
+            });
+        } 
+    }
 
      
     
