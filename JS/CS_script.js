@@ -216,7 +216,7 @@ $(document).ready(function() {
     function renderIcon(element){
        
         let chrHTML = `
-        <div class="icon-cont col-9 col-lg-3 col-md-6 col-sm-2 p-2 ">
+        <div class="icon-cont col-9 col-md-2 col-lg-4 col-xxl-4  col-sm-2 p-2 ">
                 <img class="${element.id} chr-btn rounded-circle border border-4" src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
         </div>
         `;

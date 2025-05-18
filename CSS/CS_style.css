@@ -58,7 +58,9 @@ main{
     color: var(--color1);
 }
 
-
+.logo-movile{
+    display: none !important;
+}
 
 /* Animaciones Menu */
 #logo a img:hover{
@@ -134,12 +136,31 @@ main{
     border-color: var(--color2) !important;
 }
 
+#data-cont .data-first{
+    height: 70vh !important;
+}
+
+#chr-selector{
+    justify-self: center !important;   
+}
+
 /* botones */
+#chr-selector div.icon-cont{
+   display: flex;
+   justify-content: center;
+}
+
+.data-first{
+    justify-content: center;
+    align-items: center;
+}
+
 div img.chr-btn{
     background-color: var(--color1);
     border-color: var(--color2) !important;
 
     transition: 0.33s;
+   
 }
 
 #info-btn{
@@ -181,12 +202,21 @@ div img.chr-btn{
     justify-self: flex-start;
    }
 
+   #main-container{
+    align-content: normal !important;
+   }
+
+
    #chr-selector div img.chr-btn {
-        height: 11vh;
+        height: 14vh;
    }
     
    .btn-img{
         width:30vw;
+   }
+
+   .cont-tablet{
+    display: none !important;
    }
 
    #data-cont{
@@ -203,14 +233,22 @@ div img.chr-btn{
 @media screen and (max-width: 768px) {
 
     .divider-cont, .divider-horizontal{
-        display: none;
+        display: none !important;
     }
 
+   
 
     #data-cont{
-        height: auto;
+        height: 80vh !important;
         padding: 0% !important;
         margin: 3vh;
+        align-content: center !important;
+    }
+
+    #data-cont .data-first{
+        padding: 0% !important;
+        margin: 3vh;
+        height: auto !important;
     }
 
     #data-cont div{
@@ -266,16 +304,15 @@ div img.chr-btn{
         height: 100% !important;
     }
 
+    
+
    #data-cont div{
        padding-right: 2vw !important;
     }
 
-    .data-first{
-        height: 51vh !important;
-  
-    }
+   
 
-     #chr-selector{
+    #chr-selector{
         height: 40vh !important; 
         padding-left: 2vw !important;
          padding-right: 2vw !important;
@@ -286,6 +323,10 @@ div img.chr-btn{
        
         width: 20vw !important;
         height: auto;
+    }
+
+    #chr-selector div.icon-cont{
+        display: inline;
     }
 
     #chr-selector div{
