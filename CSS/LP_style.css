@@ -1,13 +1,38 @@
-*{
-    scroll-snap-type: y mandatory;
-    scroll-padding-top: 10vh;
-    /* scroll-behavior: smooth; */
+:root{
+    /* Variables texto  */
+    --title: 80pt;
+    --subtitle: 22pt;
+    --textSize: 13pt;
+
+    --titleMovile: 50pt;
+    --subtitleMovile: 20pt;
+
+    /* Variables color */
+    --color1: #FFFAEE;
+    --color2: #9E7A60;
+    --color3: #BE8E72;
+    --color4: #597795;
+    --color5: #9ABAD3;
+    --color6: #EEB06B;
+    --color7: #3B4252;
 }
 
 /* Fuentes */
 @font-face{
     font-family: HYWenHei;
     src: url(../MEDIA/FONTS/hywenhei.ttf); 
+}
+
+p{
+    font-family: HYWenHei;
+    color: var(--color7);
+    font-size: var(--textSize);
+}
+
+*{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 10vh;
+    /* scroll-behavior: smooth; */
 }
 
 /* Menú */
@@ -17,6 +42,7 @@
 
 #menu-flex{
     height: 10vh;
+    background-image: linear-gradient(var(--color2), var(--color3));
     position: fixed;
     z-index: 100;
 }
@@ -29,6 +55,7 @@
 #menu-flex button a{
     font-family: HYWenHei;
     text-decoration: none;
+    color: var(--color1);
 }
 
 /* Textos */
@@ -45,7 +72,7 @@ h1{
 /* ImagenPrincipal */
 #main-img{
     height: 100vh;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%); */
     width: 100vw;
     scroll-snap-align: start;
     
@@ -58,17 +85,8 @@ h1{
 }
 
 #slideshowContainer{
-    height: 60vh;
+    height: 40vh;
 }
-
-.carousel .carousel-control-next-icon{
-    background-image: url("../MEDIA/IMG/next_icon.png"); 
-}
-
-.carousel .carousel-control-prev-icon{
-    background-image: url("../MEDIA/IMG/prev_icon.png"); 
-}
-
 
 /* Game Info */
 #game-info{
