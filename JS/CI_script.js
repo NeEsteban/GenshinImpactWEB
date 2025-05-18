@@ -109,7 +109,7 @@ $(document).ready(function() {
 
         let vision =`
         <p class="m-0 pt-4">${infoChr.vision}</p>
-        <img src="MEDIA/IMG/Visiones/${infoChr.vision}.png" id="vision_img" class=" h-75 w-75" alt="Vision">
+        <img src="MEDIA/IMG/Elementos/${infoChr.vision}.png" id="vision_img" class=" h-75 w-75" alt="Vision">
         `;
 
         $("#vision-container").append(vision);

@@ -29,6 +29,12 @@ p{
     font-size: var(--textSize);
 }
 
+main{
+    height: 84vh;
+    width: 100vw;
+    background-color: var(--color3);
+}
+
 /* Menú */
 #logo{
     height: 5vh;
@@ -52,7 +58,8 @@ p{
 
 /* Chracter Info */
 #chsn-chracter{
-    height: 85vh;
+    height: 87vh;
+    width: 100vw;
     background-image: url(../MEDIA/IMG/Fondo.png);
     background-size: 50%;
     background-repeat: repeat;
