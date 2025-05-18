@@ -42,51 +42,124 @@ $(document).ready(function() {
        //cambio de link e imagen seleccionando al personaje
        //no sé optimizarlo 
        $('body').on('click', 'img.albedo', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=albedo")
-            
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=albedo");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/albedo/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+ 
+
         });
         $('body').on('click', 'img.alhaitham', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=alhaitham")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=alhaitham");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","MEDIA/IMG/alhaitham-gacha-splash.webp");
+            });
+            $("#chr-img").fadeIn(999);
             
         });
          $('body').on('click', 'img.aloy', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=aloy")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=aloy");
+
+             $("#chr-img").fadeOut(999, function(){
+                 $("#chr-img").attr("src","https://genshin.jmp.blue/characters/aloy/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.amber', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=amber")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=amber");
+
+             $("#chr-img").fadeOut(999, function(){
+                 $("#chr-img").attr("src","https://genshin.jmp.blue/characters/amber/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.arataki-itto', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=arataki-itto")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=arataki-itto");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/arataki-itto/gacha-splash");
+        
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.arlecchino', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=arlecchino")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=arlecchino");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/arlecchino/gacha-splash");
+              
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.ayaka', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayaka")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayaka");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/ayaka/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.ayato', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayato")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=ayato");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/ayato/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.baizhu', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=baizhu")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=baizhu");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","MEDIA/IMG/baizhu-gacha-splash.webp");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.barbara', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=barbara")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=barbara");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/barbara/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.beidou', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=beidou")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=beidou");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/beidou/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
          $('body').on('click', 'img.bennett', function() {
-            $("a#info-btn").attr("href", "CharacterInfo.html?id=bennett")
+            $("a#info-btn").attr("href", "CharacterInfo.html?id=bennett");
+
+            $("#chr-img").fadeOut(999, function(){
+                $("#chr-img").attr("src","https://genshin.jmp.blue/characters/bennett/gacha-splash");
+            });
+            $("#chr-img").fadeIn(999);
+
             
         });
 
