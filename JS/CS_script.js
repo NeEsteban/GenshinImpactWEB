@@ -11,7 +11,7 @@ $(document).ready(function() {
 
      //loader
       let percentage = 0;
-    let deltaTime = 20;
+    let deltaTime = 10;
 
 
     fetch("https://genshin.jmp.blue/characters")
@@ -49,6 +49,13 @@ $(document).ready(function() {
         });
 
         $('body').on('mouseleave', 'div img.chr-btn' , function(){
+            $(this).css({"transform": "scale(1)"});
+        });
+
+        $('#info-btn').on('mouseover' , function(){
+            $(this).css({"transform": "scale(1.1)", "cursor": "pointer"});
+        });
+        $('#info-btn').on('mouseleave' , function(){
             $(this).css({"transform": "scale(1)"});
         });
 
@@ -210,7 +217,7 @@ $(document).ready(function() {
        
         let chrHTML = `
         <div class="col-9 col-lg-3 col-md-4  p-2 ">
-                <img class="${element.id} chr-btn rounded-circle" src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
+                <img class="${element.id} chr-btn rounded-circle border border-4" src="MEDIA/IMG/Iconos/${element.id}.webp" class="" alt="...">
         </div>
         `;
         
