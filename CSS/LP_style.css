@@ -118,11 +118,18 @@ h1{
 /* Showcase de Pesonajes */
 #chr-showcase{
     scroll-snap-align: start;
-    height: 90vh;
+    height: 90vh !important;
+}
+
+#chr-select{
+    height: 70vh !important;
+    display: flex;
+    flex-direction: column;
 }
 
 #chr-select img{
-    width: 100%;
+    width: 80% ;
+    
 }
 
 #img-chr-showcase{
@@ -141,13 +148,25 @@ h1{
 
 #btn-chr-showcase{
     height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-#chr-button{
-    background-image: url(../MEDIA/IMG/button.png); 
-    background-size: cover;
-    border: none;
-    cursor: pointer; 
+#chr-btn{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-decoration: none;
+    color: var(--color1);
+    font-size: var(--subtitle);
+    font-family: HYWenHei;
+}
+
+.chr-btn-img{
+     width: 25vw !important;
 }
 
 /* Footer*/
