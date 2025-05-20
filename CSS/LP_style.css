@@ -29,10 +29,18 @@ p{
     font-size: var(--textSize);
 }
 
+html{
+    cursor: url(../MEDIA/IMG/Raton.png), auto;
+}
+
 *{
     scroll-snap-type: y mandatory;
     scroll-padding-top: 10vh;
     scroll-behavior: smooth;
+}
+
+a{
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
 }
 
 /* Menú */
@@ -50,6 +58,7 @@ p{
 #menu-flex button{
     background: none;
     border: none;
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
 }
 
 #menu-flex button a{
@@ -102,6 +111,12 @@ h1{
 #slideshow h1{
     font-size: var(--title);
     color: var(--color4);
+    
+}
+
+.swiper-button-next img, .swiper-button-prev img{
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
+
 }
 
 /* Game Info */
@@ -125,6 +140,7 @@ h1{
     height: 70vh !important;
     display: flex;
     flex-direction: column;
+    
 }
 
 #chr-select img{
@@ -163,10 +179,16 @@ h1{
     color: var(--color1);
     font-size: var(--subtitle);
     font-family: HYWenHei;
+
+    cursor: url(../MEDIA/IMG/Raton_pointer.png);
 }
 
 .chr-btn-img{
      width: 25vw !important;
+}
+
+#chr-select img{
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto !important;
 }
 
 /* Footer*/
@@ -186,8 +208,10 @@ footer p{
 
 .social-icon{
     color: var(--color1) !important;
+    cursor: url(../MEDIA/IMG/Raton_pointer.png);
 }
 
 .social-icon :hover{
     color: var(--color3) !important;
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
 }

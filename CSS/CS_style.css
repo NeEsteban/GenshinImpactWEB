@@ -35,6 +35,13 @@ main{
     
 }
 
+html{
+    cursor: url(../MEDIA/IMG/Raton.png), auto;
+}
+
+a, button{
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
+}
 
 /* Menú */
 #logo{
@@ -50,6 +57,7 @@ main{
 #menu-flex button{
     background: none;
     border: none;
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
 }
 
 #menu-flex button a{
@@ -150,6 +158,10 @@ main{
    justify-content: center;
 }
 
+#chr-selector div.icon-cont img{
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto !important;
+ }
+
 .data-first{
     justify-content: center;
     align-items: center;
@@ -160,13 +172,12 @@ div img.chr-btn{
     border-color: var(--color2) !important;
 
     transition: 0.33s;
-   
 }
 
 #info-btn{
     position: relative;
-
     transition: 0.33s;
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
 }
 
 #info-btn a{
@@ -182,8 +193,9 @@ div img.chr-btn{
 }
 
 .btn-img{
-
     width: 15vw;
+    cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
+    
 }
 
 .space-movile{
