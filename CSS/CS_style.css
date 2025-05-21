@@ -49,6 +49,10 @@ a, button{
     display: flex;
 }
 
+#logo a img{
+    transition: 0.33s;
+}
+
 #menu-flex{
     height: 10vh;
     background-image: linear-gradient(var(--color2), var(--color3));
@@ -58,12 +62,16 @@ a, button{
     background: none;
     border: none;
     cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
+
+    transition: 0.33s;
 }
 
 #menu-flex button a{
     font-family: HYWenHei;
     text-decoration: none;
     color: var(--color1);
+
+    transition: 0.33s;
 }
 
 .logo-movile{
