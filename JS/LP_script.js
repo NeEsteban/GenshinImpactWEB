@@ -1,33 +1,33 @@
 // Selector de Personajes   
 let ventiImg = document.getElementById("venti_chrc");
-let iansanImg = document.getElementById("iansan_chrc");
-let xilonenImg = document.getElementById("xilonen_chrc");
-let xianyunImg = document.getElementById("xianyun_chrc");
+let ningguangImg = document.getElementById("ningguang_chrc");
+let tighnariImg = document.getElementById("tighnari_chrc");
+let sigewinneImg = document.getElementById("sigewinne_chrc");
 
 ventiImg.onclick = function(){
     $(main_img).fadeOut(333, function(){
-      main_img.src = "MEDIA/IMG/venti-gacha-splash.webp";
+      main_img.src = "MEDIA/IMG/IconosLP/venti_chr.png";
     });
     $(main_img).fadeIn(333);
 }
 
-iansanImg.onclick = function(){
+ningguangImg.onclick = function(){
     $(main_img).fadeOut(333, function(){
-      main_img.src = "MEDIA/IMG/iansan-gacha-splash.webp";
+      main_img.src = "MEDIA/IMG/IconosLP/ningguang_chr.png";
     });
     $(main_img).fadeIn(333);
 }
 
-xilonenImg.onclick = function(){
+tighnariImg.onclick = function(){
     $(main_img).fadeOut(333, function(){
-      main_img.src = "MEDIA/IMG/xilonen-gacha-splash.webp";
+      main_img.src = "MEDIA/IMG/IconosLP/tignari_chr.png";
     });
     $(main_img).fadeIn(333);
 }
 
-xianyunImg.onclick = function(){
+sigewinneImg.onclick = function(){
     $(main_img).fadeOut(333, function(){
-      main_img.src = "MEDIA/IMG/xianyun-gacha-splash.webp";
+      main_img.src = "MEDIA/IMG/IconosLP/sigewinne_chr.png";
     });
     $(main_img).fadeIn(333);
 }

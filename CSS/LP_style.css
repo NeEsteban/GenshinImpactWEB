@@ -156,6 +156,18 @@ h1{
     /* position: relative; */
     display: flex;
     justify-content: center;
+    position: relative !important;
+}
+
+#main_img{
+    height: 62vh !important;
+}
+
+.frame-img{
+    position: absolute;
+    height: 62vh !important;
+    
+   
 }
 
 /* #main-map{
