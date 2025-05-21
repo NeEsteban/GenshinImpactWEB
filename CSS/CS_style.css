@@ -44,6 +44,17 @@ a, button{
 }
 
 /* Menú */
+
+/* menu parte responsive */
+#menu-movile{
+    display: none !important;
+}
+
+#icono-movile{
+    visibility: hidden !important;
+}
+/* menu main */
+
 #logo{
     height: 5vh;
     display: flex;
@@ -53,7 +64,7 @@ a, button{
     transition: 0.33s;
 }
 
-#menu-flex{
+#menu-main{
     height: 10vh;
     background-image: linear-gradient(var(--color2), var(--color3));
 }
@@ -323,6 +334,7 @@ div img.chr-btn{
 
 @media screen and (max-width: 480px) {
 
+
     .divider-cont{
         display: none !important;
     }
@@ -377,24 +389,24 @@ div img.chr-btn{
 
     /* menu */
 
+   #icono-movile{
+    visibility: visible !important;
+   }
+
+   #menu-desktop{
+        display: none;
+   }
+
     #logo{
         position: relative;
     }
 
-    #logo a img{
-        position: absolute;
-        right: 30%;
-        top: 20%;
-        width: 50vw;
-        height: auto !important;
-    }
-
-    #menu .menu-flex{
+   #menu-movile{
         display: block;
         padding-top: 30%;
    }
 
-   .menu-flex {
+   #menu-movile{
         flex-direction: column;
         vertical-align: middle;
         max-height: 0px;
@@ -402,22 +414,22 @@ div img.chr-btn{
         transition: 0.35s;
    }
 
-   .menu-flex  li{
+   #menu-movile  li{
         padding: 5% 0%;
     }
 
-    .menu-flex  li a{
+    #menu-movile  li a{
         text-align: center;
     }
 
-   .btnCloseMenu{
+    #icono-movile .btnCloseMenu{
         display: block;
         position: absolute;
         top: 20px;
         right: 20px;
    }
 
-   .btnCloseMenu i{
+   #icono-movile .btnCloseMenu i{
         font-size: 5vw;
         color: var(--color1);
     }
