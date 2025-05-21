@@ -152,10 +152,15 @@ a, button{
     justify-self: center !important;   
 }
 
+/* #chr-selector div img.chr-btn{
+    width: min-content !important;  
+} */
+
 /* botones */
 #chr-selector div.icon-cont{
    display: flex;
    justify-content: center;
+   height: 25% !important;
 }
 
 #chr-selector div.icon-cont img{
@@ -218,10 +223,21 @@ div img.chr-btn{
     align-content: normal !important;
    }
 
+   #chr-selector {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+   
+   }
 
    #chr-selector div img.chr-btn {
         height: 14vh;
    }
+
+   #chr-selector div.icon-cont{
+    height: auto !important;
+    }
+
     
    .btn-img{
         width:30vw;
@@ -290,9 +306,9 @@ div img.chr-btn{
         justify-content: space-between !important;
     }
 
-    #chr-selector div.icon-cont{
+    /* #chr-selector div.icon-cont{
         margin: 3vw;
-    }
+    } */
 }
 
 /* Mobile*/
@@ -316,7 +332,9 @@ div img.chr-btn{
         height: 100% !important;
     }
 
-    
+    #data-cont{
+        height: auto !important;
+    }
 
    #data-cont div{
        padding-right: 2vw !important;
