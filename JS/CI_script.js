@@ -98,7 +98,17 @@ $(document).ready(function() {
             <img src="MEDIA/IMG/Naciones/${infoChr.nation}.png" id="nation_img" class=" h-75 w-75" alt="Nation">
         `;
 
-        $("#nation-container").append(nation);
+        let nation_Unknown =`
+        <p class="m-0 pt-4">${infoChr.nation}</p>
+        <img src="MEDIA/IMG/Naciones/Unknown.png" id="nation_img" class=" h-75 w-75" alt="Nation">
+    `;
+
+        if(infoChr.nation == "Unknown"||infoChr.nation == "Snezhnaya"){
+            $("#nation-container").append(nation_Unknown);
+        }else{
+            $("#nation-container").append(nation);
+        }
+
 
         let weapon =`
         <p class="m-0 pt-4">${infoChr.weapon}</p>
