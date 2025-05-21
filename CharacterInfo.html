@@ -12,39 +12,50 @@
 </head>
 <body>
     <header>
-          <!-- MENÚ PRINCIPAL -->
-          <nav id="menu">
+        <div id="menu-cont" class="row">
+ 
+            <div id="logo" class="col-7 h-100 align-content-center">
+                <a href="index.html" class="h-100 align-content-center justify-content-center"><img src="MEDIA/IMG/logo.png" class="h-100 align-content-center justify-content-center" alt=""></a>
+            </div>
 
-            <!-- <div id="logo">
-                <a href="LandingPage.html"><img src="" alt=""></a>
-                
-             </div> -->
-            
-            <!-- <input type="checkbox" id="menuToggle">
+          <!-- MENÚ PRINCIPAL -->
+            <nav class="row col-5" id="menu">
+      
+                <input type="checkbox" id="menuToggle">
                     <label for="menuToggle" class="btnCloseMenu">
                         <i class="fa-solid fa-bars"></i>
-                    </label> -->
+                    </label>
 
-                    <div id="menu-flex" class="row p-4">
-                        <div id="logo" class="col-8 h-100">
-                            <a href="LandingPage.html" class="h-100"><img src="MEDIA/IMG/logo.png" class="h-100" alt=""></a>
-                        </div>
-                        <div class="row col-4 justify-content-space-around h-100">
-                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
-                            
-                            <button type="button" class="col-3 h-100"><a href="LandingPage.html">Hoyoverse</a></button>
+                <ul class="menu-flex ">
+                    <li id="div-menu">
+                        <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    </li>
 
-                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    <li>
+                        <button type="button" class="col-3 h-100"><a href="index.html#slideshow">Hoyoverse</a></button>
+                    </li>
 
-                            <button type="button" class="col-3 h-100"><a href="">Juego</a></button>
+                    <li id="div-menu"> 
+                        <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    </li>
 
-                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    <li>
+                         <button type="button" class="col-3 h-100"><a href="index.html#game-info">Juego</a></button>
 
-                            <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
-                        </div>
-            </div>
-        </nav>
+                    </li>
 
+                    <li id="div-menu">
+                        <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                     </li>
+
+                    <li>
+                        <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
+                    </li>
+                </ul>
+        
+            </nav>
+
+        </div>
     </header>
 
     <main>

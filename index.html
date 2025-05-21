@@ -11,50 +11,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/Carrusel_style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     
     <header>
-        <!-- MENÚ PRINCIPAL -->
-        <nav id="menu">
+        <div id="menu-cont" class="row">
+ 
+            <div id="logo" class="col-7 h-100">
+                <a href="index.html" class="h-100"><img src="MEDIA/IMG/logo.png" class="h-100" alt=""></a>
+            </div>
 
-            <!-- <div id="logo">
-                <a href="LandingPage.html"><img src="" alt=""></a>
-                
-             </div> -->
-            
-            <!-- <input type="checkbox" id="menuToggle">
+          <!-- MENÚ PRINCIPAL -->
+            <nav class="row col-5" id="menu">
+      
+                <input type="checkbox" id="menuToggle">
                     <label for="menuToggle" class="btnCloseMenu">
                         <i class="fa-solid fa-bars"></i>
-                    </label> -->
+                    </label>
 
-                    <div id="menu-flex" class="row vw-100 p-4">
-                        <div id="logo" class="col-8 h-100">
-                            <a href="LandingPage.html" class="h-100"><img src="MEDIA/IMG/logo.png" class="h-100" alt=""></a>
-                        </div>
-                        <div class="row col-4 justify-content-space-around h-100">
-                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
-                            
-                            <button type="button" class="col-3 h-100"><a href="#slideshow">Hoyoverse</a></button>
+                <ul class="menu-flex ">
+                    <li id="div-menu">
+                        <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    </li>
 
-                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    <li>
+                        <button type="button" class="col-3 h-100"><a href="index.html#slideshow">Hoyoverse</a></button>
+                    </li>
 
-                            <button type="button" class="col-3 h-100"><a href="#game-info">Juego</a></button>
+                    <li id="div-menu"> 
+                        <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    </li>
 
-                            <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                    <li>
+                         <button type="button" class="col-3 h-100"><a href="index.html#game-info">Juego</a></button>
 
-                            <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
-                        </div>
-                
+                    </li>
 
-            </div>
-            
-            <!-- <ul class="menu-flex">
-                <li><a href="">Hoyoverse</a></li>
-                <li><a href="">Juego</a></li>
-                <li><a href="">Personajes</a></li>
-            </ul> -->
-        </nav>
+                    <li id="div-menu">
+                        <div class="col-1 text-center h-100"><img src="MEDIA/IMG/divisor_vertical_2.png" class="h-100"></div>
+                     </li>
+
+                    <li>
+                        <button type="button" class="col-3 h-100"><a href="CharacterSelector.html">Personajes</a></button>
+                    </li>
+                </ul>
+        
+            </nav>
+
+        </div>
 
     </header>
 
@@ -83,7 +89,7 @@
                 </div>
                 <div class="swiper-button-next"><img src="MEDIA/IMG/next_icon.png"></div>
                 <div class="swiper-button-prev"><img src="MEDIA/IMG/prev_icon.png" alt=""></div>
-                <div class="swiper-pagination"><img src="MEDIA/IMG/MEDIA/IMG/Star_icon.svg" alt=""></div>
+                <div class="swiper-pagination"><img src="MEDIA/IMG/Star_icon.svg" alt=""></div>
             </div>
               
            </section>
@@ -94,14 +100,14 @@
     
            <section id="game-info" class="container">
             <div class="info-left row align-items-center px-4" >
-                <div class="game-Img col w-50 pe-4">
+                <div class="game-Img col-12 col-lg-6 pe-4">
                     <img src="MEDIA/IMG/img_game.png" class="w-100 py-4" alt="Los hermanos">
                    <p>
                     Genshin Impact es un videojuego de rol de acción para dispositivos móviles y ordenador desarrollado por miHoYo.
                    </p> 
                 </div>
     
-                 <div id="game-text" class=" col border border-5 rounded">
+                 <div id="game-text" class=" col-12 col-lg-6 border border-5 rounded">
                  <p class="p-4 align-items-center">
                     Ambientado en Teyvat, la historia se centra en el Viajero, un aventurero interestelar que despierta 500 años después de ser separado de su hermana gemela. 
                     <br>
@@ -126,9 +132,9 @@
                     <div id ="img-chr-showcase"  class="row col-12 d-flex justify-content-center px-5 pb-2">
                         <div id="chr-select" class="row col-3 h-100">
                              <img id="venti_chrc" class="col-3" src="MEDIA/IMG/IconosLP/venti.png" alt="Venti">
-                             <img id="ningguang_chrc" class="col-3" src="MEDIA/IMG/IconosLP/ninguang.png" alt="Ningguang">
+                             <img id="ningguang_chrc" class="col-3" src="MEDIA/IMG/IconosLP/ningguang.png" alt="Ningguang">
                              <img id="tighnari_chrc" class="col-3" src="MEDIA/IMG/IconosLP/tighnari.png" alt="Tighnari">
-                                <img id="sigewinne_chrc" class="col-3" src="MEDIA/IMG/IconosLP/sigewine.png" alt="Sigewinne">
+                                <img id="sigewinne_chrc" class="col-3" src="MEDIA/IMG/IconosLP/sigewinne.png" alt="Sigewinne">
                         </div>
                         <div id="show-chr" class="col-9 h-100">
                             <img class="frame-img" src="MEDIA/IMG/frame.png" alt="">
@@ -137,6 +143,7 @@
                         </div>
                     </div>
 
+                    <div class="space-movile w-100"></div>
                 
                     <div id ="btn-chr-showcase" class="row col-12 ">
                         <img class="chr-btn-img" src="MEDIA/IMG/button.png" alt="">
@@ -153,18 +160,18 @@
     </main>
 
     <footer>
-        <div class="social-btns d-flex justify-content-center align-items-center pt-5 ">
+        <div class="social-btns d-flex justify-content-center align-items-center pt-5 col-12">
             <a href="https://www.facebook.com/GenshinImpact/" target="_blank" class="px-2">
-                <img src="MEDIA/IMG/Logos/facebook_icon.svg" class="social-icon" alt="Facebook">
+                <img src="MEDIA/IMG/Logos/facebook_icon.svg" class="social-icon w-100" alt="Facebook">
             </a>
             <a href="https://x.com/genshinimpact" target="_blank" class="px-2">
-                <img src="MEDIA/IMG/Logos/x_icon.svg" class="social-icon" alt="X">
+                <img src="MEDIA/IMG/Logos/x_icon.svg" class="social-icon w-100" alt="X">
             </a>
             <a href="https://www.instagram.com/genshinimpact/" target="_blank" class="px-2">
-                <img src="MEDIA/IMG/Logos/instagram_icon.svg" class="social-icon" alt="Instagram">
+                <img src="MEDIA/IMG/Logos/instagram_icon.svg" class="social-icon w-100" alt="Instagram">
             </a>
             <a href="https://www.tiktok.com/discover/genshin-impact-official?lang=es" target="_blank" class="px-2">
-                <img src="MEDIA/IMG/Logos/tiktok_icon.svg" class="social-icon" alt="TikTok" >
+                <img src="MEDIA/IMG/Logos/tiktok_icon.svg" class="social-icon w-100" alt="TikTok" >
             </a>
         </div>
         <div class="pt-3 p-4 d-flex justify-content-center w-100">
