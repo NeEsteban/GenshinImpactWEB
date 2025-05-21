@@ -546,15 +546,11 @@ footer p{
     }
 
     .chr-btn-img{
-        height: 5vh !important;
+        height: 10vh !important;
         width: auto !important;
     }
 
-    #chr-btn{
-        height: 5vh !important;
-    }
-
     #chr-btn a{
-        font-size: var();
+        font-size: var(--textSize);
     }
 }
