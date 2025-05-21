@@ -4,8 +4,11 @@
     --subtitle: 22pt;
     --textSize: 12pt;
 
-    --titleMovile: 50pt;
+    --titleMovile: 25pt;
+    --titleTablet: 30pt;
     --subtitleMovile: 20pt;
+    --textsizeMovile: 10pt;
+
 
     /* Variables color */
     --color1: #FFFAEE;
@@ -226,4 +229,143 @@ footer p{
 .social-icon :hover{
     color: var(--color3) !important;
     cursor: url(../MEDIA/IMG/Raton_pointer.png), auto;
+}
+
+
+/* Media queries */
+
+/* Para móviles*/
+@media (max-width: 767px) {
+    :root {
+        --title: var(--titleMovile);
+        --subtitle: var(--subtitleMovile);
+        --textSize: var(--textsizeMovile);
+    }
+
+    html, body {
+        scroll-snap-type: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    h1{
+        font-size: var(--titleMovile);
+    }
+
+    #main-img {
+        height: auto;
+    }
+
+    #slideshow {
+       height: auto;
+    }
+
+    .chr-btn-img {
+        width: 60vw !important;
+    }
+
+    #chr-btn {
+        font-size: var(--textsizeMovile) !important;
+    }
+
+    #main_img,
+    .frame-img {
+        height: 40vh !important;
+    }
+
+    #chr-select img {
+        width: 90% !important;
+    }
+
+    #logo {
+        height: 4vh;
+    }
+
+    #menu-flex {
+        height: 8vh;
+    }
+
+    footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .social-btns {
+        display: flex;
+        justify-content: center;   
+        align-items: center;         
+        flex-direction: row;         
+        gap: 12px;                   
+        flex-wrap: nowrap;
+    }
+
+    .social-icon {
+        font-size: 1rem !important; 
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* Para tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --title: var(--titleTablet);
+        --subtitle: var(--subtitleTablet);
+        --textSize: 16px;
+    }
+
+    #main-img {
+        height: auto;
+    }
+
+    #slideshow {
+       height: auto;
+    }
+
+    html, body {
+        scroll-snap-type: none !important;
+        scroll-behavior: auto !important;
+    }
+
+    h1{
+        font-size: var(--titleTablet);
+    }
+
+    .chr-btn-img {
+        width: 40vw !important;
+    }
+
+    #main_img,
+    .frame-img {
+        height: 50vh !important;
+    }
+
+    #chr-select img {
+        width: 85% !important;
+    }
+
+    #logo {
+        height: 5vh;
+    }
+
+    #menu-flex {
+        height: 9vh;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .social-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
 }
